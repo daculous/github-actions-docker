@@ -1,0 +1,15 @@
+name: "DACulous Docker Push"
+description: "build, tag and pushes the container"
+author: "@daculous team"
+
+branding:
+  icon: "anchor"
+  color: "blue"
+
+runs:
+  using: docker
+  image: Dockerfile
+
+outputs:
+  TAG_NAME:
+    description: "Your Docker Tag name."
