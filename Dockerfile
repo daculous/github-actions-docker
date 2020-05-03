@@ -1,7 +1,6 @@
 FROM docker
 
-RUN apk add -v --update bash curl python py-pip jq git file tar && \
-    apt-get clean
+RUN apk add -v --update bash curl python py-pip jq git file tar
 
 LABEL "com.github.actions.name"="Docker Push"
 LABEL "com.github.actions.description"="build, tag and pushes the container"
